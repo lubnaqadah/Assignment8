@@ -181,6 +181,12 @@
         });
         
         
+        $(":button").each(function(eve){
+            container.addEventListener("click", function(){
+                $(this).css("color", "red");
+            }, true);
+        });
+        
     });
     
 

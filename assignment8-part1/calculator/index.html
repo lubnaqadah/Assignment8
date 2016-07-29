@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lab 2 - Calculator III</title>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<style>
+    .size {
+        width: 40px;
+        height: 40px
+    }
+    
+    
+    
+    
+    </style>
+
+
+
+<script>
+    
+    $(document).ready(function(){ 
+        
+        $(":button").each(function(){
+            $(":button").addClass("size");
+        });
+        
+        $("#one").css({
+            backgroundColor: "#C9ACC0",
+            fontSize: "20px",
+            color: "#000",
+            border: "solid 1px red",
+            margin: "2px"
+            
+        });
+         
+        $("#two").css({
+            backgroundColor: "#6F8ABF",
+            fontSize: "20px",
+            color: "#000",
+            border: "solid 1px red",
+            margin: "2px"
+            
+        });
+         
+        $("#three").css({
+            backgroundColor: "#4AD9BF",
+            fontSize: "20px",
+            color: "#000",
+            border: "solid 1px red",
+            margin: "2px"
+            
+        });
+         
+        $("#four").css({
+            backgroundColor: "#758BBA",
+            fontSize: "20px",
+            color: "#000",
+            border: "solid 1px red",
+            margin: "2px"
+            
+        });
+         
+        $("#five").css({
+            backgroundColor: "#AAE1E8",
+            fontSize: "20px",
+            color: "#000",
+            border: "solid 1px red",
+            margin: "2px"
+            
+        });
+         
+        $("#six").css({
+            backgroundColor: "#37A18D",
+            fontSize: "20px",
+            color: "#000",
+            border: "solid 1px red",
+            margin: "2px"
+            
+        });
+         
+        $("#seven").css({
+            backgroundColor: "#6FB08B",
+            fontSize: "20px",
+            color: "#000",
+            border: "solid 1px red",
+            margin: "2px"
+            
+        });
+         
+        $("#eight").css({
+            backgroundColor: "#5FE1E8",
+            fontSize: "20px",
+            color: "#000",
+            border: "solid 1px red",
+            margin: "2px"
+            
+        });
+         
+        $("#nine").css({
+            backgroundColor: "#758BD8",
+            fontSize: "20px",
+            color: "#000",
+            border: "solid 1px red",
+            margin: "2px"
+            
+        });
+         
+        $("#zero").css({
+            backgroundColor: "#E8ACF9",
+            fontSize: "20px",
+            color: "#000",
+            border: "solid 1px red",
+            margin: "2px"
+            
+        });
+         
+        $("#equal").css({
+            backgroundColor: "#5FE18F",
+            fontSize: "20px",
+            color: "#000",
+            border: "solid 1px red",
+            margin: "2px"
+            
+        });
+         
+        $("#period").css({
+            backgroundColor: "#40A4FF",
+            fontSize: "20px",
+            color: "#000",
+            border: "solid 1px red",
+            margin: "2px"
+            
+        });
+         
+        $("#add").css({
+            backgroundColor: "#4A42B4",
+            fontSize: "20px",
+            color: "#000",
+            border: "solid 1px red",
+            margin: "2px"
+            
+        });
+         
+        $("#subtract").css({
+            backgroundColor: "#4EE5CA",
+            fontSize: "20px",
+            color: "#000",
+            border: "solid 1px red",
+            margin: "2px"
+            
+        });
+         
+        $("#multiply").css({
+            backgroundColor: "#91E5CA",
+            fontSize: "20px",
+            color: "#000",
+            border: "solid 1px red",
+            margin: "2px"
+            
+        });
+         
+        $("#divide").css({
+            backgroundColor: "#9151CA",
+            fontSize: "20px",
+            color: "#000",
+            border: "solid 1px red",
+            margin: "2px"
+            
+        });
+        
+        $("#result").css({
+            backgroundColor: "#F0C0CC",
+            fontSize: "20px",
+            color: "#000",
+            border: "solid 1px #000",
+            margin: "2px",
+            width: "182px"
+            
+        });
+        
+        
+    });
+    
+
+</script>
+
+</head>
+
+<body>
+	<input type="text" readonly id="result">
+    <br>
+    <div id="container">
+        <input type="button" id="seven" value="7">
+        <input type="button" id="eight" value="8">
+        <input type="button" id="nine" value="9">
+        <input type="button" id="divide" value="/">
+        <br>
+        <input type="button" id="four" value="4">
+        <input type="button" id="five" value="5">
+        <input type="button" id="six" value="6">
+        <input type="button" id="multiply" value="*">
+        <br>
+        <input type="button" id="one" value="1">
+        <input type="button" id="two" value="2">
+        <input type="button" id="three" value="3">
+        <input type="button" id="subtract" value="-">
+        <br>
+        <input type="button" id="zero" value="0">
+        <input type="button" id="period" value=".">
+        <input type="button" id="add" value="+">
+    </div>
+    <input type="button" id="equal" value="=">
+</body>
+</html>

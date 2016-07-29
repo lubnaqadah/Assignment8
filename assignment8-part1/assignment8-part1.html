@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Assignment 8 part 1</title>
+<style>
+    
+    #step8{
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+    }
+    
+    </style>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function(){ 
+        
+        //#### Step 1
+        
+        $("#btn1").click(function(){
+           window.alert("the button has been clicked."); 
+        });
+        
+        //#### Step 2
+        
+        $("#btn2").bind("click", function(event) {
+           window.alert("the button has been clicked."); 
+        });
+         
+        //#### Step 3
+        
+        $("#btn3").on("click", function(event) {
+           window.alert("the button has been clicked."); 
+        });
+        
+        //#### Step 4
+        
+        $("#btn41, #btn42").on("click", function(event) {
+           window.alert("the button has been clicked."); 
+        });
+        
+        //#### Step 5
+        
+        $("#step5").css({"width": "400px", "height": "400px", backgroundColor: "#ccc"}).on("mouseenter mouseleave", function(){
+            //alert("The mouse hovered over or left the div!");
+        });
+        
+        //#### Step 6
+        
+       /* $("#step5").on({
+                     mouseenter: function() {alert("Hovered over the div!");},
+                     mouseleave: function() {alert("The mouse left the div!");},
+                     click: function() {alert("You clicked on the div!");}});
+*/
+        
+        //#### Step 7
+        
+        $("#google").click(function(eve){
+            eve.preventDefault();
+            $("#google").css("color", "red");
+            window.alert($("#google").prop("tagName"));
+        })
+        
+        
+        //#### Step 8
+        
+        
+        $(window).resize(function(){
+        var wWidth = $(window).width();
+        var wHeight = $(window).height();
+        $("#step8").text("the window width is " + wWidth + " " + "the window height is " + wHeight);
+        });
+        
+        
+        
+        //#### Step 9
+        
+        $("#step9").focus(function(){
+        $(this).css("background-color", "#ccc");
+        });
+         
+        $("#step9").blur(function(){
+        $(this).css("background-color", "#fff");
+        });
+        
+        
+        //#### Step 10
+        
+        
+        $("#submit").click(function(eve){
+            eve.preventDefault();
+            
+            
+           if($("#step101").val().length == 0){
+               window.alert("Please enter a name.")
+               $("#step101").css("border-color", "red");
+           }else{
+               $("#step101").css("border-color", "green")
+           }
+            
+           if($("#step102").val().length == 0){
+               window.alert("Please enter an email.")
+               $("#step102").css("border-color", "red");
+           }else{
+               $("#step102").css("border-color", "green")
+           }
+            
+        });
+        
+        
+    });
+    
+    
+    
+    
+    </script>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+	
+    <br>
+    <div id="container">
+        <button id="btn1">btn1</button>
+        <button id="btn2">btn2</button>
+        <button id="btn3">btn3</button>
+        <button id="btn41">btn41</button>
+        <button id="btn42">btn42</button>
+          <br>  <br>
+        <div id="step5"><span id="span"></span></div>
+        <br>
+        
+        <a href="https://www.google.com" id="google">Google.com</a>
+        <br>
+        <br><br>
+        <div id="step8">Resize the browser</div>
+        
+        <br><br>
+        <input type="text" id="step9">
+    </div>
+    <br><br>
+    <form>
+        <label>Name</label><input type="text" id="step101">
+        <label>Email</label><input type="email" id="step102">
+        <button id="submit" type="submit" value="sybit">Submit</button>
+
+        
+    </form>
+    
+    
+    
+    
+</body>
+</html>

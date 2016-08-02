@@ -1,6 +1,14 @@
+body {
+	width: 960px;
+	margin: auto;
+	
+}
+
+
 .style {
 	width: 600px;
 	height: 350px;
+	margin: auto;
 	position: absolute;
 }
 .style img{
@@ -27,6 +35,8 @@
 	height: auto;
 	margin: 0;
 	padding: 0;
+	float: left;
+	margin-right: 15px;
 }
 
 #container li{
@@ -52,4 +62,34 @@ li.current{
 .menu {
 	padding: 0;
 	margin:0
+}
+
+
+#accordion {
+	width: 400px;
+	float: left;
+}
+.cont {
+	display: none;
+}
+.heading{
+	background-color: teal;
+	background-image: url(/assignment8-part2/images/icon_plus_grey.gif);
+	background-position: left;
+	background-repeat: no-repeat;
+	color: #fff;
+	border: solid 1px #ccc;
+	border-radius: 7px;
+	padding: 5px;
+	padding-left: 20px
+}
+.active{
+	background-color: azure;
+	background-image: url(/assignment8-part2/images/Minus.png);
+	background-position: left;
+	background-repeat: no-repeat;
+	color: teal;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	padding-left: 20px
 }

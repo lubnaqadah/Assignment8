@@ -74,7 +74,7 @@ li.current{
 }
 .heading{
 	background-color: teal;
-	background-image: url(/assignment8-part2/images/icon_plus_grey.gif);
+	background-image: url(/images/icon_plus_grey.gif);
 	background-position: left;
 	background-repeat: no-repeat;
 	color: #fff;
@@ -85,7 +85,7 @@ li.current{
 }
 .active{
 	background-color: azure;
-	background-image: url(/assignment8-part2/images/Minus.png);
+	background-image: url(/images/Minus.png);
 	background-position: left;
 	background-repeat: no-repeat;
 	color: teal;
